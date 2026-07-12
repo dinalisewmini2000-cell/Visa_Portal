@@ -18,6 +18,12 @@ app.use('/api/applications', applicationRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/auth', authRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Start server only if not in Vercel production environment
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+// Export for Vercel Serverless
+module.exports = app;
