@@ -47,7 +47,7 @@ function Home() {
         position: 'relative',
         background: 'none'
       }}>
-        <img src="/banner.png" alt="Australia Visa Portal Banner" style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }} />
+        <img src={`${import.meta.env.BASE_URL}banner.png`} alt="Australia Visa Portal Banner" style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }} />
         <div style={{
           position: 'absolute',
           top: 0, left: 0, right: 0, bottom: 0,
