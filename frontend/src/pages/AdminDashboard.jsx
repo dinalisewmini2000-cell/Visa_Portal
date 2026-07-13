@@ -150,6 +150,7 @@ function AdminDashboard() {
     return (
       <main className="main-content" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
         <form onSubmit={handleLogin} style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', width: '100%', maxWidth: '400px' }}>
+          <div style={{ textAlign: 'center', fontSize: '4.5rem', marginBottom: '1rem' }}>🔒</div>
           <h2 style={{ textAlign: 'center', marginBottom: '1.5rem', color: '#002b5e' }}>Admin Login</h2>
           <label style={{ display: 'block', marginBottom: '1rem', fontWeight: 'bold' }}>
             Admin Email:

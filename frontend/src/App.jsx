@@ -34,8 +34,9 @@ function AppContent() {
         
         {/* Discreet Admin Link */}
         <div style={{ position: 'absolute', bottom: '10px', right: '20px' }}>
-          <Link to="/admin" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none', fontSize: '0.8rem' }}>
-            🔒 Staff Portal
+          <Link to="/admin" style={{ color: '#0047ba', textDecoration: 'none', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 'bold' }}>
+            <span style={{ fontSize: '1.5rem' }}>🔒</span>
+            <span style={{ fontSize: '1rem' }}>Staff Portal</span>
           </Link>
         </div>
       </footer>
